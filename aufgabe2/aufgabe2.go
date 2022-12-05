@@ -3,7 +3,7 @@
  */
 package aufgabe2
 
-/* AUFGABENSTELLUNG: */
+// AUFGABENSTELLUNG:
 // Erwartet eine int-Slice list.
 // Liefert eine int-Slice, die an Stelle n die Summe
 // der Elemente aus list bis zu Stelle n enthält.
