@@ -4,6 +4,9 @@
 package aufgabe5
 
 // AUFGABENSTELLUNG:
+// Reparieren Sie die folgende Methode.
+// Es müssen alle Tests grün werden.
+
 // Fügt ein Element zu dict hinzu,
 // das das Wortpaar (de,en) enthält.
 // Falls dict schon einen Eintrag für de enthält,
