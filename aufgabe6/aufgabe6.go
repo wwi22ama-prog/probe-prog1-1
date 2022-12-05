@@ -5,7 +5,6 @@ package aufgabe6
 
 import (
 	"fmt"
-	"strings"
 )
 
 // AUFGABENSTELLUNG:
@@ -17,12 +16,12 @@ import (
 // Datentyp für Einträge eines Wörterbuchs.
 type Entry struct {
 	De string
-	En []string
+	En string
 }
 
 // Liefert einen neuen Eintrag.
 func NewEntry(de, en string) Entry {
-	return Entry{de, []string{en}}
+	return Entry{de, en}
 }
 
 // Liefert eine String-Repräsentation eines Eintrags.
@@ -33,10 +32,10 @@ func (entry Entry) String() string {
 // Liefert einen String mit allen englischen Wörtern aus entry.
 // Die einzelnen Wörter sollen mit Kommata getrennt sein.
 func (entry Entry) Translations() string {
-	return strings.Join(entry.En, ",")
+	return entry.En
 }
 
 // Fügt eine neue Übersetzung zu entry hinzu.
 func (entry *Entry) AddTranslation(newEn string) {
-	entry.En = append(entry.En, newEn)
+	entry.En = newEn
 }
