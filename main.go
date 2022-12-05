@@ -7,5 +7,5 @@ import (
 
 func main() {
 	testcode.Greet()
-	aufgabe8.PlayRSP()
+	aufgabe8.PlayRPS()
 }
