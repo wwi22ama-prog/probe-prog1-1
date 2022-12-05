@@ -8,10 +8,6 @@ package aufgabe1
 // gemeinsamen Vielfachen von m und n, die nicht größer als max sind.
 func CommonMultiples(m, n, max int) []int {
 	result := []int{}
-	for x := m; x <= max; x += m {
-		if x%n == 0 {
-			result = append(result, x)
-		}
-	}
+	// TODO
 	return result
 }
