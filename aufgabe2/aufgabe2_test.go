@@ -2,9 +2,6 @@ package aufgabe2
 
 import "fmt"
 
-// Gibt Ergebnisse von sums() auf die Konsole aus.
-// Der Kommentar unten gibt die erwarteten Ergebnisse an.
-// Automatische Prüfung mittels des Befehls "go test" (statt "go run").
 func ExampleArraySums() {
 	fmt.Println(ArraySums([]int{1, 3, 5, 7}))
 	fmt.Println(ArraySums([]int{1, 1, 2, 80}))
