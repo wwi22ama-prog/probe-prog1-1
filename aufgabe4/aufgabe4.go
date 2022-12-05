@@ -8,10 +8,6 @@ package aufgabe4
 // an denen x vorkommt.
 func FindAll(list []int, x int) []int {
 	result := []int{}
-	for pos, el := range list {
-		if el == x {
-			result = append(result, pos)
-		}
-	}
+	// TODO
 	return result
 }
