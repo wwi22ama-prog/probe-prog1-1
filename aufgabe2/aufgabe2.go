@@ -1,5 +1,5 @@
 /* AUFGABE: Listen
- * Erreichbare Punkte:
+ * Erreichbare Punkte: 10
  */
 package aufgabe2
 

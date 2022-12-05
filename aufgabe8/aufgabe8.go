@@ -1,5 +1,5 @@
 /* AUFGABE: Schere-Stein-Papier
- * Erreichbare Punkte:
+ * Erreichbare Punkte: 25
  */
 package aufgabe8
 

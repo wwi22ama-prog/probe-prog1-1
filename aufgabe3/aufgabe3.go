@@ -1,5 +1,5 @@
 /* AUFGABE: Rekursion
- * Erreichbare Punkte:
+ * Erreichbare Punkte: 10
  */
 package aufgabe3
 
