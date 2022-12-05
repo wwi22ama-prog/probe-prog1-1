@@ -1,5 +1,5 @@
 /* AUFGABE: Structs
- * Erreichbare Punkte:
+ * Erreichbare Punkte: 20
  */
 package aufgabe5
 
