@@ -12,9 +12,14 @@ func ExampleEntry_Translations() {
 	e1.AddTranslation("heaven")
 	fmt.Println(e1)
 
+	e2 := NewEntry("Fenster", "")
+	e2.AddTranslation("window")
+	fmt.Println(e2)
+
 	// Output:
 	// Himmel : sky
 	// Himmel : sky,heaven
+	// Fenster : window
 }
 
 func Example_beispiel_join() {

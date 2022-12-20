@@ -37,5 +37,12 @@ func (entry Entry) Translations() string {
 
 // Fügt eine neue Übersetzung zu entry hinzu.
 func (entry *Entry) AddTranslation(newEn string) {
-	entry.En = newEn
+	entry.En += "," + newEn
 }
+
+// Sehr einfacher erster Lösungsansatz:
+/*
+func (entry *Entry) AddTranslation(newEn string) {
+	entry.En += "," + newEn
+}
+*/
