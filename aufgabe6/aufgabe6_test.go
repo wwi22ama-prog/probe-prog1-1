@@ -16,9 +16,13 @@ func ExampleEntry_Translations() {
 	e2.AddTranslation("window")
 	fmt.Println(e2)
 
+	e2.AddTranslation("")
+	fmt.Println(e2)
+
 	// Output:
 	// Himmel : sky
 	// Himmel : sky,heaven
+	// Fenster : window
 	// Fenster : window
 }
 

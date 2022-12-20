@@ -16,12 +16,12 @@ import (
 // Datentyp für Einträge eines Wörterbuchs.
 type Entry struct {
 	De string
-	En string
+	En []string
 }
 
 // Liefert einen neuen Eintrag.
 func NewEntry(de, en string) Entry {
-	return Entry{de, en}
+	return Entry{de, []string{en}}
 }
 
 // Liefert eine String-Repräsentation eines Eintrags.
@@ -32,12 +32,27 @@ func (entry Entry) String() string {
 // Liefert einen String mit allen englischen Wörtern aus entry.
 // Die einzelnen Wörter sollen mit Kommata getrennt sein.
 func (entry Entry) Translations() string {
-	return entry.En
+	// Die Wörter aus der Liste En mit Komma zusammenhängen.
+	result := ""
+	for i, el := range entry.En {
+		if el != "" {
+			result += el
+			if i < len(entry.En)-1 {
+				result += ","
+			}
+		}
+	}
+	return result
+
+	// Einfache Lösung mit strings.Join():
+	// return strings.Join(entry.En, ",")
 }
 
 // Fügt eine neue Übersetzung zu entry hinzu.
 func (entry *Entry) AddTranslation(newEn string) {
-	entry.En += "," + newEn
+	if newEn != "" {
+		entry.En = append(entry.En, newEn)
+	}
 }
 
 // Sehr einfacher erster Lösungsansatz:
