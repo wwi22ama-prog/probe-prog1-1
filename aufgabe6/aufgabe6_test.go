@@ -1,6 +1,9 @@
 package aufgabe6
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func ExampleEntry_Translations() {
 	e1 := NewEntry("Himmel", "sky")
@@ -12,4 +15,24 @@ func ExampleEntry_Translations() {
 	// Output:
 	// Himmel : sky
 	// Himmel : sky,heaven
+}
+
+func Example_beispiel_join() {
+	// Beispiel für strings.Join():
+	stringList := []string{"Hallo", "du", "schöne", "Welt"}
+
+	s3 := strings.Join(stringList, " ")
+	s4 := strings.Join(stringList, ":")
+	s5 := strings.Join(stringList, "\n")
+	fmt.Println(s3)
+	fmt.Println(s4)
+	fmt.Println(s5)
+
+	// Output:
+	// Hallo du schöne Welt
+	// Hallo:du:schöne:Welt
+	// Hallo
+	// du
+	// schöne
+	// Welt
 }
